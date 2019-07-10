@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+}
+
+.squares,
+.three-squares {
+    display: flex;
+}
+
+
+
+#first{
+    background: yellow;
+}
+#first:hover, #second:hover, #third:hover{
+    background: grey;
+    color: white;
+    border-radius: 50%;
+}
+#second{
+    background: blue;
+}
+#third{
+    background: red;
+}
+
+.squares{
+    height: 350px;
+    width: 350px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.three-squares{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.center-square{
+    padding: 0 15px;
+}
+
+.art-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px ;
+}
+
+.button{
+    background: black;
+    border-radius: 15px;
+    color: white;
+    height: 50px;
+    width: 80px;
+    outline: none;
+}
+
+.two-circles{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.circle{
+    height: 320px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#one{
+  background: pink;
+    margin-right: 15px;
+}
+
+#two{
+    background: deeppink;
+}
+
+.txt{
+    display: flex;
+    justify-content: center;
+}
+
+.animated-square{
+    height: 320px;
+    width: 320px;
+    animation: spin 3s linear alternate infinite;
+}
+
+.donald-quotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@media (min-width: 600px) {
+    .squares{
+        height: 280px;
+        width: 230px;
+    }
+    .three-squares{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .center-square{
+        font-size: 16px;
+        color: white;
+    }
+    #two{
+        order: -1;
+        margin-right: 20px;
+    }
+    .donald-quotes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.donald{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+#donald1{
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#donald2{
+    background: black;
+    color: whitesmoke;
+}
+
+.donaldT{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+    .squares {
+        height: 350px;
+        width: 350px;
+    }
+    .center-square {
+        font-size: 18px;
+        color: black;
+    }
+    #two {
+        order: 1;
+        margin-left: 20px;
+    }
+}
